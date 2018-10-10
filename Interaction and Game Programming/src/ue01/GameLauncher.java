@@ -4,7 +4,7 @@ import at.fhooe.mtd.sgl.app.Java2dApplication;
 import at.fhooe.mtd.sgl.app.Java2dApplicationConfig;
 import at.fhooe.mtd.sgl.graphics.GfxConfigurator;
 
-public class HelloLauncher {
+public class GameLauncher {
 
 	public static void main(String[] args) {
 		GfxConfigurator gfxc = new GfxConfigurator();
@@ -12,7 +12,7 @@ public class HelloLauncher {
 		gfxc.runDialog();
 		
 		Java2dApplicationConfig config = Java2dApplicationConfig.create(gfxc);
-		config.title = "Hello Sgl";
+		config.title = "Asteroids";
 		new Java2dApplication(config, new HelloWorld());
 	}
 
